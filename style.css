@@ -1,0 +1,156 @@
+div{
+    width: 70%;
+    text-align: justify;
+    margin: auto;
+    box-sizing: border-box;
+}
+span {
+    color: darkgreen;
+}
+sub {
+    color: blue;
+    font-style: oblique;
+    font-weight: bold;
+}
+em {
+    color: blue;
+}
+strong {
+    font-style: oblique;
+}
+.logo1 {
+    float: left;
+    margin-right: 20px;
+}
+.logo2 {
+    float: right;
+    margin-left: 20px;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.transform {
+    background-color: #0d5825;
+    height: 800px;
+    width: 800px;
+    position: relative;
+    margin: auto;
+}
+blockquote {
+    margin: 0;
+    padding: 20px 0 50px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    box-sizing: border-box;
+}
+.cards img {
+    width: 150px;
+    position: absolute;
+}
+.cards img:nth-child(1) {
+    z-index: 1;
+    left: 300px;
+    top: 300px;
+    transform: skew(20deg, -20deg);
+}
+.cards img:nth-child(2) {
+    z-index: 2;
+    left: 350px;
+    top: 300px;
+    transform: skew(10deg, -10deg);
+}
+.cards img:nth-child(3) {
+    z-index: 3;
+    left:400px;
+    top: 300px;
+    transform: skew(-5deg, 5deg);
+}
+.cards img:hover:nth-child(1) {
+    transform: skew(20deg, -20deg) translateY(-40px);
+}
+.cards img:hover:nth-child(2) {
+    transform: skew(10deg, -10deg) translateY(-40px);
+}
+.cards img:hover:nth-child(3) {
+    transform: skew(-5deg, 5deg) translateY(-40px);
+}
+.images {
+    position: relative;
+}
+.images>div {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: solid black 2px;
+    background-color: yellow;
+}
+.images>div>img {
+    width: 40px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+}
+.images>div>p{
+    display: none;
+    position: absolute;
+    bottom: 5px;
+    font-size: 12px;
+    color: blue;
+}
+.images>div:nth-child(1){
+    z-index: 1;
+    left: 50px;
+    top: 50px;
+}
+.images>div:nth-child(2){
+    z-index: 2;
+    left: 100px;
+    top: 100px;
+}
+.images>div:nth-child(3){
+    z-index: 3;
+    left: 200px;
+    top: 200px;
+}
+.images>div:nth-child(4){
+    z-index: 4;
+    left: 300px;
+    top: 300px;
+}
+.images>div:hover {
+    z-index: 5;
+    transform: scale(1.5,1.5);
+}
+.images>div:hover p{
+    display: inline-block;
+}
+.images>div:hover img {
+    display: none;
+}
+.transition {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+.brow img:nth-child(1) {
+    width: 500px;
+    height: 500px;
+}
+.brow {
+    position: relative;
+    padding: 50px;
+}
+.brow img:nth-child(2){
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    width: 75px;
+    height: 30px;
+}
+.brow img:hover:nth-child(2){
+    transform: rotate(-15deg);
+}
